@@ -6,10 +6,10 @@ import App from './App.tsx'
 import './index.css'
 
 // Import your publishable key
-const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
+const PUBLISHABLE_KEY = import.meta.env.VITE_NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
 
 if (!PUBLISHABLE_KEY) {
-  console.error("Missing VITE_CLERK_PUBLISHABLE_KEY in .env file")
+  console.error("Missing NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY in .env file")
 }
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
